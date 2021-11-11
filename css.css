@@ -38,3 +38,8 @@ a:hover{
 li{
     margin:30px 0px;
 }
+
+*::selection{
+    color:black;
+    background-color: yellow;
+}
