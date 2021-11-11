@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>언어와 매체 발표자료</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        #ggu {
+            color: royalblue;
+        }
+
+        #ggu::selection {
+
+            background-color: yellow;
+            text-shadow: royalblue 1px 1px 1px;
+        }
+
+        #all {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+        }
+
+        #head {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        #main {
+            border-left: 1px solid black;
+            padding-left: 10px;
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+
+        #side {
+            background-color: gainsboro;
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        li{
+            font-size:30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="head">웹사이트 구성 언어</h1>
+    <hr>
+    <div id="all">
+        <ol id="side">
+            <li><a href="index.html">웹사이트에 대해서</a></li>
+            <li><a href="프론트.html">프론트엔드 개발자</a></li>
+            <li><a href="website.html">웹사이트 구성 언어</a></li>
+            <li><a href="mamoori.html">마무리</a></li>
+        </ol>
+        <div id="main">
+            <ul>
+                <li>HTML</li>
+                <p>웹사이트의 뼈대를 구성하는 언어</p>
+                <li>CSS</li>
+                <p>웹사이트를 <span id="ggu">꾸며주는</span> 언어</p>
+                <li>JAVA SCRIPT</li>
+                <p id="js">웹사이트에 기능을 넣어주는 언어</p><input type="button" value="hide" onclick="
+                var java = document.querySelector('#js');
+                if(this.value == 'hide'){
+                    java.style.visibility='hidden';
+                    this.value = 'show';
+                }
+                else{
+                    java.style.visibility='visible';
+                    this.value = 'hide';
+                }">
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
